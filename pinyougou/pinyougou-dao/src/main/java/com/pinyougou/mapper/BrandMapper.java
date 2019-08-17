@@ -1,10 +1,14 @@
 package com.pinyougou.mapper;
 
 import com.pinyougou.pojo.TbBrand;
+import com.pinyougou.service.BaseService;
 
 import java.util.List;
+import java.util.Map;
 
-public interface BrandMapper {
+public interface BrandMapper extends BaseMapper<TbBrand> {
     List<TbBrand> queryAll();
+
+    List<Map<String,Object>> selectOptionList();
 }
 

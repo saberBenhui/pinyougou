@@ -5,4 +5,7 @@
     <select id="queryAll" resultType="com.pinyougou.pojo.TbBrand">
         SELECT * FROM tb_brand
     </select>
+    <select id="selectOptionList" resultType="java.util.Map">
+        SELECT id,name as text from tb_brand
+    </select>
 </mapper>
